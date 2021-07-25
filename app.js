@@ -87,7 +87,7 @@ inquirer
         console.log(answer);
         // write these answers to a file (final readme.md)
         const readme = markdown.generateReadme(answer);     
-        const readmePath = path.join(__dirname, 'readme.md');
+        const readmePath = path.join(__dirname, 'lib', 'readme.md');
         fs.writeFileSync(readmePath, readme, 'utf-8');
     })
     .then(() => console.log('Successfully wrote to README.md'))
